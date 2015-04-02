@@ -4,11 +4,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, user-scalable=no">
-  <link href="http://jqmdesigner.appspot.com/gk/lib/jquery.mobile/1.4.5/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css" />
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <link href="jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css" />
+  <script src="jquery.min.js"></script>
+  <script src="jquery.mobile-1.4.5.min.js"></script>
+
   <!-- Uncomment the following to include cordova in your android project -->
   <!--<script src="http://jqmdesigner.appspot.com/platforms/android/cordova.js"></script>-->
+  
   <!-- Export JS  -->
   <script>
     $(document).on('pageinit', function () {
@@ -29,7 +32,7 @@
 <!-- script finish -->
 
 <body>
-<div id="home" data-role="page" style="background: url(http://www.cae.com/uploadedImages/Content/BusinessUnit/Corporate/News/2014/images/7000XR%20simulator.jpg) -80px 150px / 125% repeat repeat fixed;">
+<div id="home" data-role="page" style="background: url(./res/7000XRsim.jpg) -150px 50px / 125% repeat repeat fixed;">
   <div data-role="header" data-position="fixed" data-theme="a">
     <h3>Check Sim</h3>
   </div>
@@ -40,19 +43,19 @@
     <ul data-role="listview" data-inset="true" id="hero_list" style="margin:0;">
       <li>
         <a href="#A310" data-transition="slide">
-          <img src="http://icons.iconarchive.com/icons/aha-soft/standard-transport/256/plane-icon.png" class="ui-li-icon">A310 FFS</a>
+          <img src="./res/plane-icon.png" class="ui-li-icon">A310 FFS</a>
       </li>
       <li>
         <a href="#B737" data-transition="slide">
-          <img src="http://icons.iconarchive.com/icons/aha-soft/standard-transport/256/plane-icon.png" class="ui-li-icon">B737 FFS</a>
+          <img src="./res/plane-icon.png" class="ui-li-icon">B737 FFS</a>
       </li>
       <li>
         <a href="#A310" data-transition="slide">
-          <img src="http://icons.iconarchive.com/icons/aha-soft/standard-transport/256/plane-icon.png" class="ui-li-icon">A330 FFS</a>
+          <img src="./res/plane-icon.png" class="ui-li-icon">A330 FFS</a>
       </li>
       <li>
         <a href="#B737" data-transition="slide">
-          <img src="http://icons.iconarchive.com/icons/aha-soft/standard-transport/256/plane-icon.png" class="ui-li-icon">Q400 FFS</a>
+          <img src="./res/plane-icon.png" class="ui-li-icon">Q400 FFS</a>
 
       </li>
     </ul>
