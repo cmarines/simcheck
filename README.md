@@ -1,1 +1,1 @@
-My Test for SimCheck
+[[C:\AndroidApps\_SimCheck\res\plane-icon.png]]
