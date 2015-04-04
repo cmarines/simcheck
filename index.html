@@ -27,6 +27,32 @@
 
     });
   </script>
+  
+  <script>
+    var pages = ['home', 'A310', 'A330', 'B737', 'Q400'];
+    $(document).on('pageinit', '#home', function () {
+
+      $(document).on("swiperight", function () {
+        var pageId = $.mobile.activePage.attr('id');
+        var idx = pages.indexOf(pageId);
+        idx = idx - 1 < 0 ? pages.length - 1 : idx - 1;
+        $.mobile.changePage('#' + pages[idx], {
+          'transition': 'slide',
+          'reverse': true
+        });
+      });
+
+      $(document).on("swipeleft", function () {
+        var pageId = $.mobile.activePage.attr('id');
+        var idx = pages.indexOf(pageId);
+        idx = ++idx % pages.length;
+        $.mobile.changePage('#' + pages[idx], {
+          'transition': 'slide'
+        });
+      });
+
+    });
+  </script>  
   <title>Check Sim</title>
 </head>
 <!-- script finish -->
